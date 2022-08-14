@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de CVs</title>
+    <link rel="stylesheet" href="./assets/css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div class="card">
+                    <div class="card-header bg-primary text-light">
+                        <h4 class="text-center">Genere un CV rápidamente</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="card-title">
+                            <h4 class="text-center">Rellene todos los campos a continuación</h4>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="lastName">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Dirección:</label>
+                            <input type="text" class="form-control" id="address" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefono:</label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo:</label>
+                            <input type="text" class="form-control" id="email" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="languages" class="form-label">Lenguajes:</label>
+                            <input type="text" class="form-control" id="languages" />
+                          </div>
+            
+                        <div>
+
+                        <div class="mb-3">
+                            <label for="summary" class="form-label">Resumen:</label>
+                            <textarea class="form-control" rows="3" id="summary"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="skills" class="form-label">Habilidades destacadas:</label>
+                            <textarea class="form-control" rows="3" id="skills"></textarea>
+                        </div>
+            
+                        <div class="mb-3">
+                            <label for="experience" class="form-label">Experiencia:</label>
+                            <textarea class="form-control" rows="3" id="experience"></textarea>
+                        </div>
+            
+                        <div class="mb-3">
+                            <label for="education" class="form-label">Educación:</label>
+                            <textarea class="form-control" rows="3" id="education"></textarea>
+                        </div>
+            
+                        <div class="mb-3">
+                            <label for="certification" class="form-label">Certificaciones:</label>
+                            <textarea class="form-control" rows="3" id="certification"></textarea>
+                        </div>
+                        <div>
+                            <button onclick="CreateContactType()" type="button" class="btn btn-outline-primary float-end" >Guardar</button>
+                            <button onclick="Clear()" type="button" class="btn btn-outline-warning float-end me-2">Limpiar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center" id="contact-container">
+        </div>
+    </div>
+    <!--Documento de JavaScrib-->
+    <script src="./assets/js/site/index.js"></script>
+</body>
+
+</html>
